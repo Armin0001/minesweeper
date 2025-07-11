@@ -1,3 +1,4 @@
+##Usage of ChatGPT, there was usage near the end, although I made sure to delete all of it as there was not enough time to fully implement the solutions. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
