@@ -11,15 +11,13 @@ function App() {
   const [startGame, setStart] = useState(true);
   const [theMines, setTheMines] = useState<any>();
   useEffect(() => {
-
     setTheMines(totalNumber());
   }, []);
   const [modalIsOpen, setIsOpen] = React.useState(false);
-Modal.setAppElement('#root');
+  Modal.setAppElement("#root");
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
   }
-function openModal() {
+  function openModal() {
     setIsOpen(true);
     setStart(false);
   }
@@ -41,7 +39,6 @@ function openModal() {
 
   const endGame = () => {};
 
-
   const ThemeContext = createContext(0);
 
   return (
@@ -53,7 +50,7 @@ function openModal() {
           </span>
         ))}
       </div>
-      
+
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -63,8 +60,8 @@ function openModal() {
       >
         <h2>Game lost</h2>
         <div className="flex gap-2">
-        <button>New Game?</button>
-        <button>View Highscores</button>
+          <button>New Game?</button>
+          <button>View Highscores</button>
         </div>
       </Modal>
     </ThemeContext>
